@@ -138,6 +138,23 @@
           </p>
         </div>
       </div>
+      <div>
+        <h3 class="mb-3">(3) What is an event loop in JavaScript ?</h3>
+        <div class="ms-3">
+          <p>
+            The event loop is the secret behind JavaScript's asynchronous
+            programming. JS executes all operations on a single thread, but
+            using a few smart data structures, it gives us the illusion of
+            multi-threading. <br />
+            The Event Loop has one simple job — to monitor the Call Stack and
+            the Callback Queue or Message Queue. If the Call Stack is empty, it
+            will take the first event from the Callback queue and will push it
+            to the Call Stack, which effectively runs it. Such an iteration is
+            called a tick in the Event Loop. Each event is just a function
+            callback.
+          </p>
+        </div>
+      </div>
     </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
