@@ -142,8 +142,11 @@ button {
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   justify-content: space-around;
 }
 
@@ -152,10 +155,12 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   padding: 20px 30px;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 15px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -186,7 +191,8 @@ button {
     padding: 0 20px;
     width: 100%;
   }
-  .card {
-    flex-direction: column;
+
+  #histories {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
